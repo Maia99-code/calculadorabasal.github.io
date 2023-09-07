@@ -1,0 +1,108 @@
+body{
+    font-family: 'Lato', sans-serif; 
+
+}
+
+.informacion {
+    flex: 1;
+    background-color: #FC426D; 
+    color: white;
+}
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+
+
+
+/* Estilos para el formulario */
+.cajaForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los campos de entrada */
+.cajaDeNumeros {
+    padding: 10px;
+    margin: 5px;
+    background-color: #EEEEEE; 
+    border: none; 
+    border-radius: 0; 
+    width: 200px; 
+    box-sizing: border-box; 
+}
+
+/* Estilos para el botón */
+.botonCalcular {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FC426D;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón al pasar el cursor sobre el */
+.botonCalcular:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilos para pantallas grandes (más de 600px de ancho) */
+@media screen and (min-width: 601px) {
+    .contenedor {
+            flex-direction: row;
+    display: flex;
+    width: 90%;
+    margin: 70px auto;
+    height: 80vh;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .formulario {
+          display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    flex: 1;
+    margin-right: 20px;
+    }
+
+    .informacion{
+
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    
+}
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media screen and (max-width: 600px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario,
+    .informacion {
+        margin-right: 0;
+    }
+}
